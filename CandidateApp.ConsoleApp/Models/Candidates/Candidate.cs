@@ -4,7 +4,7 @@
 
 namespace CandidateApp.ConsoleApp.Models.Candidate
 {
-    class Candidate
+    public class Candidate
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

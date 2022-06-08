@@ -2,12 +2,12 @@
 // Copyright (c) MumsWhoCode. All rights reserved.
 // ------------------------------------------------
 
-using System.Collections.Generic;
 using CandidateApp.ConsoleApp.Models.Candidate;
+using System.Collections.Generic;
 
 namespace CandidateApp.ConsoleApp.Brokers.StorageBrokers
 {
-    partial class StorageBroker : IStorageBroker
+    public partial class StorageBroker : IStorageBroker
     {
         List<Candidate> Candidates = new List<Candidate>();
 
@@ -17,5 +17,8 @@ namespace CandidateApp.ConsoleApp.Brokers.StorageBrokers
 
             return candidate;
         }
+
+        public List<Candidate> SelectAllCandidates() => Candidates;
+        
     }
 }

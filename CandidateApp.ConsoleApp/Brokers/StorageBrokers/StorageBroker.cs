@@ -4,7 +4,7 @@
 
 namespace CandidateApp.ConsoleApp.Brokers.StorageBrokers
 {
-    partial class StorageBroker : IStorageBroker
+    public partial class StorageBroker : IStorageBroker
     {
 
     }
